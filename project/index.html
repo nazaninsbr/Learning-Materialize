@@ -14,7 +14,10 @@
       background-position: center;
       min-height: 1000px;
     }
-
+    .section {
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
     @media screen and (max-width: 670px){
       header{
         min-height: 500px;
@@ -46,11 +49,139 @@
     </ul>
   </header>
 
+  <section class="container section" id="photos">
+    <div class="row">
+      <div class="col s12 l4">
+        <img src="./img/1.jpg" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h5 class="indigo-text text-darken-4">Portraits</h5>
+        <p>If you are not familiar with Spring Boot yet, then I highly encourage you to check it out. It would be a great honor for me if you started this journey by looking at the Spring Boot 101 tutorials. They will give you a quick overview on some of the most interesting features of this framework.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4 push-l7">
+        <img src="./img/2.jpg" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 pull-l4">
+        <h5 class="indigo-text text-darken-4">Portraits</h5>
+        <p>If you are not familiar with Spring Boot yet, then I highly encourage you to check it out. It would be a great honor for me if you started this journey by looking at the Spring Boot 101 tutorials. They will give you a quick overview on some of the most interesting features of this framework.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4">
+        <img src="./img/3.jpg" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h5 class="indigo-text text-darken-4">Portraits</h5>
+        <p>If you are not familiar with Spring Boot yet, then I highly encourage you to check it out. It would be a great honor for me if you started this journey by looking at the Spring Boot 101 tutorials. They will give you a quick overview on some of the most interesting features of this framework. </p>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/4.jpg" class="responsive-img">
+    </div>
+  </div>
+
+  <section class="container section" id="services">
+    <div class="row">
+      <div class="col s12 l4">
+        <h5 class="indigo-text text-darken-4">What I do...</h5>
+        <p>If you are not familiar with Spring Boot yet, then I highly encourage you to check it out. It would be a great honor for me if you started this journey by looking at the Spring Boot 101 tutorials. They will give you a quick overview on some of the most interesting features of this framework.</p>
+        <p>If you are not familiar with Spring Boot yet, then I highly encourage you to check it out. It would be a great honor for me if you started this journey by looking at the Spring Boot 101 tutorials. They will give you a quick overview on some of the most interesting features of this framework.</p>
+      </div>
+      <div class="col s12 l6 offset-l2">
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#webdev" class="indigo-text text-darken-4">
+              Web Dev
+            </a>
+          </li>
+          <li class="tab col s6">
+            <a href="#datascience" class="indigo-text text-darken-4">
+              Data Science
+            </a>
+          </li>
+        </ul>
+        <div class="col s12" id="webdev">
+          <p class="flow-text">
+            If you are not familiar with Spring Boot yet, then I highly encourage you to check it out. It would be a great honor for me if you started this journey by looking at the Spring Boot 101 tutorials. They will give you a quick overview on some of the most interesting features of this framework.
+          </p>
+        </div>
+        <div class="col s12" id="datascience">
+          <p class="flow-text">
+            :))))))))))))) If you are not familiar with Spring Boot yet, then I highly encourage you to check it out. It would be a great honor for me if you started this journey by looking at the Spring Boot 101 tutorials. They will give you a quick overview on some of the most interesting features of this framework.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/5.jpg" class="responsive-img">
+    </div>
+  </div>
+
+  <section class="container section" id="contact">
+    <div class="row">
+      <div class="col s12 l5">
+        <h5 class="indigo-text text-darken-4">Get in Touch</h5>
+        <p>if you started this journey by looking at the Spring Boot 101 tutorials. They will give you a quick overview on some</p>
+      </div>
+      <div class="col s12 l5 offset-l2">
+        <form action="">
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" name="email" id="email">
+            <label for="email">Your Email</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea class="materialize-textarea" id="message"></textarea>
+            <label for="message">Message</label>
+          </div>
+          <div class="input-field">
+            <input type="text" name="date" id="date" class="datepicker">
+            <label for="date">Choose a date</label>
+          </div>
+          <div class="input-field">
+            <p>Services required</p>
+            <p>
+              <label>
+                <input type="checkbox" name="">
+                <span>web dev.</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" name="">
+                <span>data science</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field center">
+            <button class="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <script>
     $(document).ready(function(){
       $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true
+      });
     });
   </script>
 </body>
